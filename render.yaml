@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: trustvault
+    runtime: python
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: TRUSTVAULT_DATA_DIR
+        value: /var/data
+      - key: DATABASE_URL
+        value: sqlite:////var/data/trustvault.db
+      - key: TRUSTVAULT_SECRET_KEY
+        sync: false
+      - key: TRUSTVAULT_AUDIT_KEY
+        sync: false
+      - key: TRUSTVAULT_MASTER_KEY
+        sync: false
+      - key: TRUSTVAULT_ADMIN_EMAIL
+        sync: false
+      - key: TRUSTVAULT_ADMIN_PASSWORD
+        sync: false
+      - key: TRUSTVAULT_ADMIN_NAME
+        value: TrustVault Administrator
+    disk:
+      name: trustvault-data
+      mountPath: /var/data
+      sizeGB: 1
