@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d1d">
+  <title>TrustVault — Secure Document Vault</title>
+  <meta name="description" content="TrustVault is a zero-trust document sharing demo with access controls and a cryptographically chained audit trail.">
+  <style>
+    :root{color-scheme:dark;--bg:#080d1d;--panel:#111a2e;--line:#26334c;--text:#edf3ff;--muted:#a6b4cc;--blue:#7c83ff;--cyan:#55d7e8}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(ellipse at 80% 0%,#20265a 0,transparent 38%),var(--bg);color:var(--text);display:flex;flex-direction:column}
+    header{height:76px;border-bottom:1px solid #ffffff16;display:flex;align-items:center;justify-content:space-between;padding:0 max(24px,calc((100vw - 1120px)/2));gap:16px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:20px;letter-spacing:-.4px}.logo{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,#6865f7,#32cce0);box-shadow:0 8px 28px #5b61ff35}.pill{font-size:11px;letter-spacing:.7px;text-transform:uppercase;color:#8be5c1;border:1px solid #3aa77a55;background:#1b8a5d1b;border-radius:999px;padding:7px 10px}
+    main{width:min(1120px,calc(100% - 40px));margin:auto;padding:72px 0 80px}.eyebrow{color:#8f9cff;font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.hero{max-width:760px}.hero h1{font-size:clamp(42px,7vw,72px);line-height:1.04;letter-spacing:-3px;margin:18px 0}.gradient{background:linear-gradient(90deg,#a7a7ff,#64e0ed);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:18px;line-height:1.75;color:var(--muted);max-width:700px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.button{display:inline-block;padding:13px 18px;border-radius:12px;text-decoration:none;font-weight:700;font-size:14px}.primary{background:#6267f4;color:white}.secondary{border:1px solid var(--line);color:var(--text);background:#111a2e}.notice{margin-top:18px;border:1px solid #f2bd5845;background:#f2bd580d;border-radius:14px;padding:16px 18px;color:#f4d99e;line-height:1.6;font-size:14px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:46px}.card{padding:23px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(150deg,#151f35dd,#0d1426dd)}.icon{font-size:24px}.card h2{font-size:17px;margin:17px 0 8px}.card p{color:var(--muted);font-size:14px;line-height:1.7;margin:0}.footer{border-top:1px solid #ffffff16;padding:22px 20px;text-align:center;color:#8391ab;font-size:12px}
+    @media(max-width:700px){header{padding:0 20px}.pill{display:none}main{padding:52px 0}.hero h1{letter-spacing:-1.5px}.grid{grid-template-columns:1fr}.hero p{font-size:16px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand"><div class="logo" aria-hidden="true"><svg width="25" height="25" viewBox="0 0 24 24" fill="none"><path d="M12 3 19 6v5c0 4.6-2.9 7.7-7 10-4.1-2.3-7-5.4-7-10V6l7-3Z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>TrustVault</div>
+    <span class="pill">Zero-Trust Security Demo</span>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">Secure document sharing · Auditability · Access control</div>
+      <h1>Your documents.<br><span class="gradient">Your control.</span></h1>
+      <p>TrustVault is a secure document-vault demonstration designed around server-enforced permissions, encrypted document storage, and a tamper-evident audit trail.</p>
+      <div class="actions"><a class="button primary" href="app/static/index.html">Open TrustVault application</a><a class="button secondary" href="#features">Explore features</a></div><div class="notice"><strong>Deployment note:</strong> Sign-in and document operations require the Python/FastAPI backend. Deploy the full project using the included <code>render.yaml</code>. A static Netlify page alone cannot run the API.</div>
+    </section>
+    <section id="features" class="grid" aria-label="TrustVault features">
+      <article class="card"><div class="icon" aria-hidden="true">🔐</div><h2>Protected documents</h2><p>Server-side access checks and encrypted-at-rest document storage help keep files available only to authorized users.</p></article>
+      <article class="card"><div class="icon" aria-hidden="true">🧾</div><h2>Audit trail</h2><p>Security events are linked into a cryptographic chain to help reveal changes to recorded audit entries.</p></article>
+      <article class="card"><div class="icon" aria-hidden="true">⚡</div><h2>Revocable access</h2><p>Permission checks happen on the backend, so access can be withdrawn rather than relying on public file links.</p></article>
+    </section>
+  </main>
+  <footer class="footer">TrustVault · Secure Document Sharing &amp; Cryptographic Audit Trail</footer>
+</body>
+</html>
