@@ -4,7 +4,7 @@ This log records five critical technical intersections during the design and con
 
 ---
 
-### Entry 1 — October 15, 2026: Pre-Signed URLs vs. Instant Revocation
+### Entry 1 — October 19, 2026: Pre-Signed URLs vs. Instant Revocation
 * **Prompt**:
   > *"How should I implement secure document downloads for authorized users in TrustVault? Provide an implementation pattern for generating temporary download links."*
 * **What the AI Produced**:
@@ -35,7 +35,7 @@ This log records five critical technical intersections during the design and con
 
 ---
 
-### Entry 2 — October 16, 2026: Incomplete Canonical Fields in Audit Ledger Chaining
+### Entry 2 — October 20, 2026: Incomplete Canonical Fields in Audit Ledger Chaining
 * **Prompt**:
   > *"Write a cryptographic HMAC-SHA256 audit chaining function that connects each audit record to the preceding block."*
 * **What the AI Produced**:
@@ -64,7 +64,7 @@ This log records five critical technical intersections during the design and con
 
 ---
 
-### Entry 3 — October 17, 2026: Admin God-Mode Backdoor Violation of Separation of Duty
+### Entry 3 — October 21, 2026: Admin God-Mode Backdoor Violation of Separation of Duty
 * **Prompt**:
   > *"Implement the role authorization logic for Document Owner, Administrator, and Viewer."*
 * **What the AI Produced**:
@@ -88,7 +88,7 @@ This log records five critical technical intersections during the design and con
 
 ---
 
-### Entry 4 — October 18, 2026: Client-Controlled MIME Validation
+### Entry 4 — October 22, 2026: Client-Controlled MIME Validation
 * **Prompt**:
   > *"Write an upload validation utility to ensure only PDFs and Word documents can be uploaded."*
 * **What the AI Produced**:
@@ -113,7 +113,7 @@ This log records five critical technical intersections during the design and con
 
 ---
 
-### Entry 5 — October 19, 2026: Stateless JWT Invalidation Failure
+### Entry 5 — October 23, 2026: Stateless JWT Invalidation Failure
 * **Prompt**:
   > *"How should we handle user sessions and authentication?"*
 * **What the AI Produced**:
